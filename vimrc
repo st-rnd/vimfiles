@@ -7,6 +7,8 @@ call pathogen#infect()
 
 colorscheme zenburn
 
+set textwidth=80
+
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
