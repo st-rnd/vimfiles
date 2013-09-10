@@ -37,9 +37,6 @@
 [submodule "bundle/indexed-search"]
 	path = bundle/indexed-search
 	url = https://github.com/vim-scripts/IndexedSearch.git
-[submodule "bundle/delimitMate"]
-	path = bundle/delimitMate
-	url = https://github.com/vim-scripts/delimitMate.vim.git
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = https://github.com/vim-scripts/matchit.zip.git
@@ -88,3 +85,9 @@
 [submodule "bundle/clojure"]
 	path = bundle/clojure
 	url = git@github.com:vim-scripts/VimClojure.git
+[submodule "bundle/colorschemes"]
+	path = bundle/colorschemes
+	url = git@github.com:flazz/vim-colorschemes.git
+[submodule "bundle/cscope"]
+	path = bundle/cscope
+	url = https://github.com/brookhong/cscope.vim.git

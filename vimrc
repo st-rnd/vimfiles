@@ -11,6 +11,8 @@ colorscheme zenburn
 set guifont=DejaVu\ Sans\ Mono:h12
 set guifontwide=DejaVu\ Sans\ Mono:h12
 
+set textwidth=80
+
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
