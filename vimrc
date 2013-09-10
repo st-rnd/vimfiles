@@ -7,6 +7,10 @@ call pathogen#infect()
 
 colorscheme zenburn
 
+" Use a font that supports a wider range of UTF-8 characters
+set guifont=DejaVu\ Sans\ Mono:h12
+set guifontwide=DejaVu\ Sans\ Mono:h12
+
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
