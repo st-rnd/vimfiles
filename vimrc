@@ -5,6 +5,12 @@ set nocompatible
 "activate pathogen
 call pathogen#infect()
 
+function SourceIfExists(path)
+	if filereadable(glob(a:path))
+		exec ":source " . a:path
+	endif
+endfunction
+
 colorscheme zenburn
 
 " Use a font that supports a wider range of UTF-8 characters
@@ -157,3 +163,4 @@ autocmd BufReadPost fugitive://*
   \   nnoremap <buffer> .. :edit %:h<CR> |
   \ endif
 
+call SourceIfExists('~/.vim/localconfig.vim')
