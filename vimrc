@@ -8,8 +8,8 @@ call pathogen#infect()
 colorscheme zenburn
 
 " Use a font that supports a wider range of UTF-8 characters
-set guifont=DejaVu\ Sans\ Mono:h12
-set guifontwide=DejaVu\ Sans\ Mono:h12
+set guifont=DejaVu\ Sans\ Mono\ 12
+set guifontwide=DejaVu\ Sans\ Mono\ 12
 
 set textwidth=80
 
