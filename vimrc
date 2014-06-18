@@ -34,6 +34,11 @@ set hlsearch    "hilight searches by default
 set wrap        "dont wrap lines
 set linebreak   "wrap lines at convenient points
 
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+
+let g:syntastic_python_checkers = ['pylint']
+
 if v:version >= 703
 	"undo settings
 	if has("win32")
