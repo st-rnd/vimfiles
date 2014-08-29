@@ -11,6 +11,10 @@ function SourceIfExists(path)
 	endif
 endfunction
 
+let g:clang_complete_copen=1
+let g:clang_periodic_quickfix=1
+let g:clang_close_preview=1
+
 colorscheme zenburn
 
 " Use a font that supports a wider range of UTF-8 characters
