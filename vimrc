@@ -164,6 +164,7 @@ endfunction
 
 "spell check when writing commit logs
 autocmd filetype svn,*commit* setlocal spell
+autocmd filetype svn,*commit* setlocal tw=72
 
 "http://vimcasts.org/episodes/fugitive-vim-browsing-the-git-object-database/
 "hacks from above (the url, not jesus) to delete fugitive buffers when we
