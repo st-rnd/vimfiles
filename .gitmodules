@@ -97,3 +97,6 @@
 [submodule "bundle/emacsmodeline"]
 	path = bundle/emacsmodeline
 	url = https://github.com/sfiera/vim-emacsmodeline.git
+[submodule "bundle/dispatch"]
+	path = bundle/dispatch
+	url = https://github.com/tpope/vim-dispatch.git
