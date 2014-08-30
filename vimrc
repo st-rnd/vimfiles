@@ -134,6 +134,9 @@ endif
 nnoremap <C-L> :nohls<CR><C-L>
 inoremap <C-L> <C-O>:nohls<CR>
 
+nnoremap <C-j> :bn<CR>
+nnoremap <C-k> :bp<CR>
+
 "map Q to something useful
 noremap Q gq
 
