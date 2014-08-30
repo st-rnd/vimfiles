@@ -166,6 +166,18 @@ endfunction
 autocmd filetype svn,*commit* setlocal spell
 autocmd filetype svn,*commit* setlocal tw=72
 
+" Enable syntax highlighting for LLVM files. To use, copy
+" utils/vim/llvm.vim to ~/.vim/syntax .
+augroup filetype
+  au! BufRead,BufNewFile *.ll     set filetype=llvm
+augroup END
+
+" Enable syntax highlighting for tablegen files. To use, copy
+" utils/vim/tablegen.vim to ~/.vim/syntax .
+augroup filetype
+  au! BufRead,BufNewFile *.td     set filetype=tablegen
+augroup END
+
 "http://vimcasts.org/episodes/fugitive-vim-browsing-the-git-object-database/
 "hacks from above (the url, not jesus) to delete fugitive buffers when we
 "leave them - otherwise the buffer list gets poluted
