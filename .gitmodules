@@ -100,3 +100,6 @@
 [submodule "bundle/dispatch"]
 	path = bundle/dispatch
 	url = https://github.com/tpope/vim-dispatch.git
+[submodule "bundle/local_vimrc"]
+	path = bundle/local_vimrc
+	url = https://github.com/LucHermitte/local_vimrc.git
