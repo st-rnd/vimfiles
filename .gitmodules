@@ -103,3 +103,6 @@
 [submodule "bundle/local_vimrc"]
 	path = bundle/local_vimrc
 	url = https://github.com/LucHermitte/local_vimrc.git
+[submodule "bundle/easy-align"]
+	path = bundle/easy-align
+	url = https://github.com/junegunn/vim-easy-align.git

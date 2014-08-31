@@ -44,6 +44,7 @@ set hlsearch    "hilight searches by default
 set wrap        "dont wrap lines
 set linebreak   "wrap lines at convenient points
 
+let g:clang_library_path = '/usr/local/lib'
 let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 let g:syntastic_cpp_checkers = ['cpplint', 'clang_check', 'clang_tidy']
@@ -136,6 +137,9 @@ inoremap <C-L> <C-O>:nohls<CR>
 
 nnoremap <C-j> :bn<CR>
 nnoremap <C-k> :bp<CR>
+
+vmap <Enter> <Plug>(EasyAlign)
+nmap <Leader>a <Plug>(EasyAlign)
 
 "map Q to something useful
 noremap Q gq
