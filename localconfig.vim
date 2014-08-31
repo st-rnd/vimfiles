@@ -1,1 +1,1 @@
-/home/dan/dotfiles/vimfiles/googleconfig.vim
+myconfig.vim
