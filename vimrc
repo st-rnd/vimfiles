@@ -12,7 +12,6 @@ function SourceIfExists(path)
 endfunction
 
 let g:clang_complete_copen=1
-let g:clang_periodic_quickfix=1
 let g:clang_close_preview=1
 
 colorscheme zenburn
@@ -49,7 +48,7 @@ let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 let g:syntastic_cpp_checkers = ['cpplint', 'clang_check', 'clang_tidy']
 
-let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_python_checkers = ['pylint', 'pep8']
 
 if v:version >= 703
 	"undo settings
@@ -68,6 +67,8 @@ endif
 "default indent settings
 set shiftwidth=4
 set tabstop=4
+set expandtab
+set smarttab
 
 "folding settings
 set foldmethod=indent   "fold based on indent
