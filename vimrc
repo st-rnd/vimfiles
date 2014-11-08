@@ -51,6 +51,10 @@ let g:syntastic_cpp_checkers = ['cpplint']
 
 let g:syntastic_python_checkers = ['pylint']
 
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
 if v:version >= 703
 	"undo settings
 	if has("win32")
