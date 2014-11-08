@@ -122,6 +122,9 @@ source ~/.vim/statusline.vim
 let g:NERDTreeMouseMode = 2
 let g:NERDTreeWinSize = 40
 
+" real man's escape
+inoremap jj <ESC>
+
 "explorer mappings
 nnoremap <f1> :BufExplorer<cr>
 nnoremap <f2> :NERDTreeToggle<cr>
@@ -136,6 +139,12 @@ runtime! projects/**/*.vim
 if !has("gui")
 	let g:CSApprox_loaded = 1
 endif
+
+" make [[ and friends behave with K&R
+map [[ ?{<CR>w99[{
+map ][ /}<CR>b99]}
+map ]] j0[[%/{<CR>
+map [] k$][%?}<CR>
 
 "make <c-l> clear the highlight as well as redraw
 nnoremap <C-L> :nohls<CR><C-L>
