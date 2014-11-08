@@ -187,7 +187,7 @@ endfunction
 
 "spell check when writing commit logs
 autocmd filetype svn,*commit* setlocal spell
-autocmd filetype svn,*commit* setlocal tw=72
+autocmd filetype svn,*commit* setlocal tw=70
 
 " Enable syntax highlighting for LLVM files. To use, copy
 " utils/vim/llvm.vim to ~/.vim/syntax .
