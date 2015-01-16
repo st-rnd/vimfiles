@@ -105,7 +105,7 @@
 	url = https://github.com/junegunn/vim-easy-align.git
 [submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
-	url = https://github.com/honza/vim-snippets.git
+	url = git@github.com:DanAlbert/vim-snippets.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
