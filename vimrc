@@ -26,6 +26,8 @@ function! SourceVimrc()
 endfunction
 command! Sv call SourceVimrc()
 
+onoremap p i(
+
 " Complete options (disable preview scratch window)
 set completeopt=menu,menuone,longest
 
