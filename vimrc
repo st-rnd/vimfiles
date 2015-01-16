@@ -26,7 +26,21 @@ function! SourceVimrc()
 endfunction
 command! Sv call SourceVimrc()
 
+" Complete options (disable preview scratch window)
+set completeopt=menu,menuone,longest
+
+" Limit popup menu height
+set pumheight=15
+
+" SuperTab option for context aware completion
+let g:SuperTabDefaultCompletionType="context"
+
+" Disable auto popup, use <Tab> to autocomplete
+let g:clang_complete_auto=0
+
 let g:clang_complete_copen=1
+
+" Close preview window after completion
 let g:clang_close_preview=1
 
 colorscheme zenburn
