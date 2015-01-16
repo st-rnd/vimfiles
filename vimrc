@@ -5,11 +5,26 @@ set nocompatible
 "activate pathogen
 call pathogen#infect()
 
-function SourceIfExists(path)
+function! SourceIfExists(path)
 	if filereadable(glob(a:path))
 		exec ":source " . a:path
 	endif
 endfunction
+
+function! EditFtpluginForCurrentFile()
+	exec "edit ~/.vim/ftplugin/" . &ft . ".vim"
+endfunction
+command! Ef call EditFtpluginForCurrentFile()
+
+function! EditVimrc()
+	split $MYVIMRC
+endfunction
+command! Ev call EditVimrc()
+
+function! SourceVimrc()
+	source $MYVIMRC
+endfunction
+command! Sv call SourceVimrc()
 
 let g:clang_complete_copen=1
 let g:clang_close_preview=1
