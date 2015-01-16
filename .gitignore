@@ -1,6 +1,10 @@
 localconfig.vim
 googleconfig.vim
 
+# These are just symlinks.
+bundle/rust
+bundle/vim-lldb
+
 tags
 *~
 *.swp
