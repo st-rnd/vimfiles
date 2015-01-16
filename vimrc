@@ -28,6 +28,8 @@ command! Sv call SourceVimrc()
 
 onoremap p i(
 
+set autochdir
+
 " Complete options (disable preview scratch window)
 set completeopt=menu,menuone,longest
 
