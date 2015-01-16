@@ -83,7 +83,7 @@ let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 "let g:syntastic_cpp_checkers = ['cpplint', 'clang_check', 'clang_tidy']
 let g:syntastic_cpp_checkers = ['cpplint']
 
-let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_python_checkers = ['pylint', 'pep8']
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
