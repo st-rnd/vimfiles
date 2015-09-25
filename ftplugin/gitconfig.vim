@@ -1,2 +1,2 @@
-set noexpandtab
-set listchars=tab:\ \ ,trail:⋅,nbsp:⋅
+setlocal noexpandtab
+setlocal listchars=tab:\ \ ,trail:⋅,nbsp:⋅
