@@ -171,6 +171,8 @@ inoremap jj <ESC>
 nnoremap gr :silent grep! <cword> *<CR>:copen<CR>:redraw!<CR>:winc p<CR>
 nnoremap gw :silent grep! '\b<cword>\b' *<CR>:copen<CR>:redraw!<CR>:winc p<CR>
 
+map <C-K> :pyf ~/src/llvm/tools/clang/tools/clang-format/clang-format.py<cr>
+
 "explorer mappings
 nnoremap <f1> :BufExplorer<cr>
 nnoremap <f2> :NERDTreeToggle<cr>
