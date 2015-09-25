@@ -165,6 +165,12 @@ let g:NERDTreeWinSize = 40
 " real man's escape
 inoremap jj <ESC>
 
+" Grep for the word under the cursor (gw is *exactly* the word), don't show the
+" full screen results, don't auto open in the current window, open the results,
+" redraw because terminals are awful, switch back to previously selected window.
+nnoremap gr :silent grep! <cword> *<CR>:copen<CR>:redraw!<CR>:winc p<CR>
+nnoremap gw :silent grep! '\b<cword>\b' *<CR>:copen<CR>:redraw!<CR>:winc p<CR>
+
 "explorer mappings
 nnoremap <f1> :BufExplorer<cr>
 nnoremap <f2> :NERDTreeToggle<cr>
