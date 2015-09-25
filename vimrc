@@ -63,6 +63,9 @@ let g:clang_complete_copen=1
 " Close preview window after completion
 let g:clang_close_preview=1
 
+" Y (upper case) persists localvimrc selection.
+let g:localvimrc_persistent=1
+
 colorscheme zenburn
 
 " Use a font that supports a wider range of UTF-8 characters
