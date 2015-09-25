@@ -26,6 +26,21 @@ function! SourceVimrc()
 endfunction
 command! Sv call SourceVimrc()
 
+"load ftplugins and indent files
+filetype plugin on
+filetype indent on
+
+"turn on syntax highlighting
+syntax on
+
+"some stuff to get the mouse going in term
+set mouse=a
+set ttymouse=xterm2
+set clipboard=unnamedplus
+
+"tell the term has 256 colors
+set t_Co=256
+
 onoremap p i(
 
 set autochdir
@@ -124,20 +139,6 @@ set formatoptions-=o "dont continue comments when pushing o/O
 set scrolloff=3
 set sidescrolloff=7
 set sidescroll=1
-
-"load ftplugins and indent files
-filetype plugin on
-filetype indent on
-
-"turn on syntax highlighting
-syntax on
-
-"some stuff to get the mouse going in term
-set mouse=a
-set ttymouse=xterm2
-
-"tell the term has 256 colors
-set t_Co=256
 
 if &term =~ '^screen'
 	" tmux will send xterm-style keys when its xterm-keys option is on
