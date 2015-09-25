@@ -67,6 +67,8 @@ let g:clang_close_preview=1
 let g:localvimrc_persistent=1
 
 colorscheme zenburn
+highlight ColorColumn ctermbg=238
+highlight ColorColumn guibg=#444444
 
 " Use a font that supports a wider range of UTF-8 characters
 set guifont=DejaVu\ Sans\ Mono\ 12
