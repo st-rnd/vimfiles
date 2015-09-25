@@ -183,11 +183,6 @@ set pastetoggle=<f2>
 "source project specific config files
 runtime! projects/**/*.vim
 
-"dont load csapprox if we no gui support - silences an annoying warning
-if !has("gui")
-	let g:CSApprox_loaded = 1
-endif
-
 " make [[ and friends behave with K&R
 map [[ ?{<CR>w99[{
 map ][ /}<CR>b99]}
