@@ -158,7 +158,10 @@ endif
 "hide buffers when not displayed
 set hidden
 
-source ~/.vim/statusline.vim
+"source ~/.vim/statusline.vim
+set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+
+set laststatus=2
 
 "nerdtree settings
 let g:NERDTreeMouseMode = 2
