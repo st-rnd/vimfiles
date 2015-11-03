@@ -183,6 +183,28 @@ nnoremap <f1> :BufExplorer<cr>
 nnoremap <f2> :NERDTreeToggle<cr>
 nnoremap <f3> :TagbarToggle<cr>
 
+" CamelCase motion should be the default. Note that the uppercase variants of
+" these motions (e.g. cW) will still behave normally.
+map w <Plug>CamelCaseMotion_w
+map b <Plug>CamelCaseMotion_b
+map e <Plug>CamelCaseMotion_e
+sunmap w
+sunmap b
+sunmap e
+
+" This changes the default behavior of cw from:
+"
+" foo_bar -> foo_bar
+" ^              ^
+"
+" to:
+"
+" foo_bar -> foo_bar
+" ^             ^
+"
+" Note that dw is left untouched.
+nmap cw ce
+
 set pastetoggle=<f2>
 
 "source project specific config files
