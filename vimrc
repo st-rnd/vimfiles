@@ -87,9 +87,29 @@ set showmode    "show current mode down the bottom
 
 set number      "show line numbers
 
-"display trailing spaces
+" Make it easier to change indentation types and sizes.
+function! UseSpaces()
+	setlocal listchars=tab:»\ ,trail:⋅,nbsp:⋅
+	setlocal expandtab
+endfunction
+command! UseSpaces call UseSpaces()
+
+function! UseTabs()
+	setlocal listchars=tab:\ \ ,trail:⋅,nbsp:⋅
+	setlocal noexpandtab
+endfunction
+command! UseTabs call UseTabs()
+
+function! IndentSize(size)
+	exec "setlocal tabstop=" . a:size
+	exec "setlocal shiftwidth=" . a:size
+endfunction
+command! Use2 call IndentSize(2)
+command! Use4 call IndentSize(4)
+
 set list
-set listchars=tab:»\ ,trail:⋅,nbsp:⋅
+" Use spaces for indentation by default.
+UseSpaces
 
 set incsearch   "find the next match as we type the search
 set hlsearch    "hilight searches by default
