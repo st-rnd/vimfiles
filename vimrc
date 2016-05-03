@@ -132,11 +132,13 @@ let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 if v:version >= 703
-	"undo settings
+	" undo/backup files settings
 	if has("win32")
 		set undodir=~/vimfiles/undofiles
+		set directory=~/vimfiles/backup
 	else
 		set undodir=~/.vim/undofiles
+		set directory=~/.vim/backup
 	endif
 
 	set undofile
