@@ -199,9 +199,21 @@ inoremap jj <ESC>
 nnoremap gr :silent grep! <cword> *<CR>:copen<CR>:redraw!<CR>:winc p<CR>
 nnoremap gw :silent grep! '\b<cword>\b' *<CR>:copen<CR>:redraw!<CR>:winc p<CR>
 
-map <C-K> :Autoformat<cr>
 let g:formatdef_autopep8 = "'autopep8 - --range '.a:firstline.' '.a:lastline"
 let g:formatters_python = ['autopep8']
+
+" Code formatter keybinds/settings
+let g:autoformat_autoindent = 0
+let g:autoformat_retab = 0
+function AutoformatBind()
+	if &ft =~ 'c$\|cpp$'
+		map <C-K> :pyf ~/bin/clang-format.py<CR>
+	else
+		map <C-K> :Autoformat<CR>
+	endif
+endfunction
+
+autocmd BufWritePost,BufNewFile,BufRead * call AutoformatBind()
 
 "explorer mappings
 nnoremap <f1> :BufExplorer<cr>
