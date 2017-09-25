@@ -136,10 +136,10 @@ if v:version >= 703
 	" undo/backup files settings
 	if has("win32")
 		set undodir=~/vimfiles/undofiles
-		set directory=~/vimfiles/backup
+		set directory=~/vimfiles/backup//
 	else
 		set undodir=~/.vim/undofiles
-		set directory=~/.vim/backup
+		set directory=~/.vim/backup//
 	endif
 
 	set undofile
