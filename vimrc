@@ -106,6 +106,7 @@ function! IndentSize(size)
 endfunction
 command! Use2 call IndentSize(2)
 command! Use4 call IndentSize(4)
+command! Use8 call IndentSize(8)
 
 set list
 " Use spaces for indentation by default.
