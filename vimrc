@@ -35,7 +35,10 @@ syntax on
 
 "some stuff to get the mouse going in term
 set mouse=a
-set ttymouse=xterm2
+
+if !has("nvim")
+	set ttymouse=xterm2
+endif
 set clipboard=unnamedplus
 
 "tell the term has 256 colors
@@ -182,7 +185,10 @@ endif
 set hidden
 
 "source ~/.vim/statusline.vim
-set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+
+if !has("nvim")
+	set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+endif
 
 set laststatus=2
 
