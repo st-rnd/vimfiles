@@ -133,3 +133,6 @@
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/vim-cmake-syntax"]
+	path = bundle/vim-cmake-syntax
+	url = git@github.com:pboettch/vim-cmake-syntax.git
