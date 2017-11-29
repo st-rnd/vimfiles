@@ -136,3 +136,6 @@
 [submodule "bundle/vim-cmake-syntax"]
 	path = bundle/vim-cmake-syntax
 	url = git@github.com:pboettch/vim-cmake-syntax.git
+[submodule "bundle/vim-skeleton"]
+	path = bundle/vim-skeleton
+	url = https://github.com/noahfrederick/vim-skeleton
