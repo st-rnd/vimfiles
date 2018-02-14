@@ -36,6 +36,8 @@ syntax on
 "some stuff to get the mouse going in term
 set mouse=a
 
+set updatetime=250
+
 if !has("nvim")
 	set ttymouse=xterm2
 endif
