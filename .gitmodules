@@ -19,9 +19,6 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
 [submodule "bundle/csapprox"]
 	path = bundle/csapprox
 	url = https://github.com/godlygeek/csapprox.git
@@ -139,3 +136,6 @@
 [submodule "bundle/vim-skeleton"]
 	path = bundle/vim-skeleton
 	url = https://github.com/noahfrederick/vim-skeleton
+[submodule "/usr/local/google/home/danalbert/.vim/pack/git-plugins/start/ale"]
+	path = /usr/local/google/home/danalbert/.vim/pack/git-plugins/start/ale
+	url = https://github.com/w0rp/ale.git

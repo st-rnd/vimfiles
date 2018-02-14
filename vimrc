@@ -125,16 +125,8 @@ set linebreak   "wrap lines at convenient points
 
 let g:clang_library_path = '/usr/local/lib'
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_cpp_compiler = 'clang++'
-let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
-"let g:syntastic_cpp_checkers = ['cpplint', 'clang_check', 'clang_tidy']
-let g:syntastic_cpp_checkers = ['cpplint']
-
-let g:syntastic_python_checkers = ['pylint', 'pep8']
+let g:ale_open_list = 1
+let g:ale_completion_enabled = 1
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
