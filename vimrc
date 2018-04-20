@@ -127,6 +127,9 @@ let g:clang_library_path = '/usr/local/lib'
 
 let g:ale_open_list = 1
 let g:ale_completion_enabled = 1
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
