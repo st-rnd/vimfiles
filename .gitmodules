@@ -136,6 +136,6 @@
 [submodule "bundle/vim-skeleton"]
 	path = bundle/vim-skeleton
 	url = https://github.com/noahfrederick/vim-skeleton
-[submodule "/usr/local/google/home/danalbert/.vim/pack/git-plugins/start/ale"]
-	path = /usr/local/google/home/danalbert/.vim/pack/git-plugins/start/ale
+[submodule "pack/git-plugins/start/ale"]
+	path = pack/git-plugins/start/ale
 	url = https://github.com/w0rp/ale.git
