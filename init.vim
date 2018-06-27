@@ -135,7 +135,7 @@ sunmap b
 sunmap e
 
 " Don't continue comments when pushing o/O.
-set formatoptions-=o 
+set formatoptions-=o
 
 " This changes the default behavior of cw from:
 "
