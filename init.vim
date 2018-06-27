@@ -22,6 +22,8 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'valloric/YouCompleteMe', { 'do': function('BuildYCM') }
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'w0rp/ale'
 
 call plug#end()
@@ -42,6 +44,7 @@ let g:formatters_python = ['yapf']
 
 " UI options.
 colorscheme zenburn
+let g:airline_theme='zenburn'
 
 set list " Show unwanted whitespace characters.
 set cursorline " Highlight current line.
