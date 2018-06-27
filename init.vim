@@ -38,6 +38,22 @@ let g:ale_lint_on_text_changed = 'never'
 let g:ale_set_loclist = 0
 let g:ale_set_quickfix = 1
 
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_info_str = 'I'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%|%severity%] %s% (code)%'
+
+" This defaults to *, which causes all checks to be run regardless of what the
+" .clang-tidy file says. Setting this to an empty list uses the file instead.
+let g:ale_cpp_clangtidy_checks = []
+
+" By default C++ is also linted with clangcheck, which is redundant.
+let g:ale_linters = {
+\   'cpp': ['clang', 'clangtidy'],
+\   'java': [],
+\   'python': ['pylint'],
+\}
+
 let g:ycm_filetype_blacklist = { 'java': 1 }
 
 let g:formatdef_yapf = "'yapf -l '.a:firstline.'-'.a:lastline"
