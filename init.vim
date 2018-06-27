@@ -12,6 +12,7 @@ endfunction
 
 Plug 'Chiel92/vim-autoformat'
 Plug 'bkad/CamelCaseMotion'
+Plug 'fatih/vim-go'
 Plug 'flazz/vim-colorschemes'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'majutsushi/tagbar'
