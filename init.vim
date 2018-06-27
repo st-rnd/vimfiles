@@ -94,6 +94,9 @@ set wildmenu
 " Ignore list for tab completion.
 set wildignore=*.o,*.obj,*~
 
+" Limit tab completion popup menu height
+set pumheight=15
+
 " Vertical/horizontal scroll off settings.
 set scrolloff=3
 set sidescrolloff=7
@@ -109,6 +112,8 @@ nnoremap Y y$
 inoremap jj <ESC>
 tnoremap <Esc> <C-\><C-n>
 map <C-K> :Autoformat<CR>
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+inoremap <expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
 
 " Explorer mappings.
 nnoremap <f1> :BufExplorer<cr>
