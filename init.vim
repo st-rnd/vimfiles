@@ -24,6 +24,7 @@ Plug 'tpope/vim-sensible'
 Plug 'valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-python/python-syntax'
 Plug 'w0rp/ale'
 
 call plug#end()
