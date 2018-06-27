@@ -16,6 +16,7 @@ Plug 'fatih/vim-go'
 Plug 'flazz/vim-colorschemes'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'majutsushi/tagbar'
+Plug 'pboettch/vim-cmake-syntax'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-fugitive'
