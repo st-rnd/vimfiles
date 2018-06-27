@@ -25,18 +25,22 @@ Plug 'valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-python/python-syntax'
-Plug 'w0rp/ale'
+
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
 
 call plug#end()
 
 " Plugin config.
 let g:deoplete#enable_at_startup = 1
 
-let g:ale_open_list = 1
-let g:ale_completion_enabled = 1
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_set_loclist = 0
-let g:ale_set_quickfix = 1
+let g:LanguageClient_serverCommands = {
+    \ 'python': ['pyls', '-v'],
+    \ }
+
+let g:LanguageClient_autoStart = 1
 
 let g:ycm_filetype_blacklist = { 'java': 1 }
 
@@ -117,6 +121,13 @@ map e <Plug>CamelCaseMotion_e
 sunmap w
 sunmap b
 sunmap e
+
+set formatexpr=LanguageClient_textDocument_rangeFormatting()
+
+nnoremap <silent> <leader>lr :call LanguageClient_textDocument_rename()<cr>
+nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
+vnoremap <silent> F :call LanguageClient_textDocument_rangeFormatting()<cr>
 
 " Don't continue comments when pushing o/O.
 set formatoptions-=o
