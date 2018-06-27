@@ -1,7 +1,16 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
+function! BuildYCM(info)
+    " info is a dictionary with 3 fields
+    " - name:   name of the plugin
+    " - status: 'installed', 'updated', or 'unchanged'
+    " - force:  set on PlugInstall! or PlugUpdate!
+    if a:info.status == 'installed' || a:info.force
+        !./install.py
+    endif
+endfunction
+
 Plug 'Chiel92/vim-autoformat'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'bkad/CamelCaseMotion'
 Plug 'flazz/vim-colorschemes'
 Plug 'jlanzarotta/bufexplorer'
@@ -10,6 +19,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
+Plug 'valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 Plug 'w0rp/ale'
 
 call plug#end()
@@ -22,6 +32,8 @@ let g:ale_completion_enabled = 1
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_set_loclist = 0
 let g:ale_set_quickfix = 1
+
+let g:ycm_filetype_blacklist = { 'java': 1 }
 
 let g:formatdef_yapf = "'yapf -l '.a:firstline.'-'.a:lastline"
 let g:formatters_python = ['yapf']
