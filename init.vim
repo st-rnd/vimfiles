@@ -63,6 +63,15 @@ let g:formatters_python = ['yapf']
 colorscheme zenburn
 let g:airline_theme='zenburn'
 
+" Enable mouse handling in all modes.
+set mouse=a
+
+" Even NERDTree.
+let g:NERDTreeMouseMode = 2
+
+" Right click opens a pop up menu for the item under the mouse cursor.
+set mousemodel=popup_setpos
+
 set list " Show unwanted whitespace characters.
 set cursorline " Highlight current line.
 set number " Show line numbers.
