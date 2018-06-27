@@ -212,3 +212,7 @@ function! SetCursorPosition()
         endif
     end
 endfunction
+
+" Spell check in commit messages.
+autocmd filetype svn,*commit* setlocal spell
+autocmd filetype svn,*commit* setlocal tw=70
