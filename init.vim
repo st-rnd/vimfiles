@@ -177,8 +177,11 @@ command! Use2 call IndentSize(2)
 command! Use4 call IndentSize(4)
 command! Use8 call IndentSize(8)
 
-UseSpaces
-Use4
+" Doesn't use the functions above since we want set rather than setlocal.
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set listchars=tab:»\ ,trail:⋅,nbsp:⋅
 
 " Mechanical pieces.
 
