@@ -1,7 +1,5 @@
-setlocal tabstop=4
-setlocal softtabstop=4
-setlocal shiftwidth=4
+Use4
+UseSpaces
 setlocal textwidth=79
 setlocal smarttab
-setlocal expandtab
 setlocal listchars=tab:»\ ,trail:⋅,nbsp:⋅
