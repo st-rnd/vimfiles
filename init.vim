@@ -80,6 +80,20 @@ set colorcolumn=+1 " Highlight the column limit.
 highlight ColorColumn ctermbg=238
 highlight ColorColumn guibg=#444444
 
+" Show a pop up menu for insert mode tab complete, even if there is only one
+" option, autocomplete to the longest matching substring, and show extra
+" information about the currently selected match.
+set completeopt=menu,menuone,longest,preview
+
+" Make tab completion similar to bash.
+set wildmode=list:longest
+
+" Use ctrl-n and ctrl-p to scroll through matches.
+set wildmenu
+
+" Ignore list for tab completion.
+set wildignore=*.o,*.obj,*~
+
 " Vertical/horizontal scroll off settings.
 set scrolloff=3
 set sidescrolloff=7
