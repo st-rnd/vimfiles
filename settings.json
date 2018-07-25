@@ -1,0 +1,9 @@
+{
+  "pyls": {
+    "plugins": {
+      "autopep8": {
+        "enabled": false
+      }
+    }
+  }
+}
